@@ -1,0 +1,19 @@
+{
+  "name": "medi2",
+  "version": "1.0.0",
+  "description": "MEDI crowdfund campaign #2",
+  "environment": "testnet",
+  "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
+  "deployedAt": "2026-05-13T18:28:25Z",
+  "chains": {
+    "sepolia": {
+      "chainId": 11155111,
+      "role": "hub",
+      "explorer": "https://sepolia.etherscan.io",
+      "artifacts": [
+        "sepolia/governance.json",
+        "sepolia/crowdfund.json"
+      ]
+    }
+  }
+}
