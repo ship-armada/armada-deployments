@@ -24,7 +24,21 @@ Multiple instances can be live simultaneously (e.g. `medi1`, `medi2`, `protocol-
 
 | Instance | Chains | Description |
 |---|---|---|
+| [`medi2`](./testnet/medi2) | sepolia | MEDI crowdfund campaign #2 |
 | [`medi1`](./testnet/medi1) | sepolia | MEDI crowdfund campaign #1 |
+
+#### `medi2` — Sepolia (chainId `11155111`)
+
+| Contract | Address |
+|---|---|
+| ARM Token | [`0x7EB073eeF5953EDAC4554915bfdeFaA31217Fcd8`](https://sepolia.etherscan.io/address/0x7EB073eeF5953EDAC4554915bfdeFaA31217Fcd8) |
+| Crowdfund | [`0x75b775b2bBbb5fE8c32D9B82AFCBC217D872859a`](https://sepolia.etherscan.io/address/0x75b775b2bBbb5fE8c32D9B82AFCBC217D872859a) |
+| Treasury | [`0x2Ea83D2Fc8B8Fe7b81C5aa152f54b1Da837c3310`](https://sepolia.etherscan.io/address/0x2Ea83D2Fc8B8Fe7b81C5aa152f54b1Da837c3310) |
+| Governor | [`0xAC836855C5aCF63E5173b729D1c4746B9Ad31b3b`](https://sepolia.etherscan.io/address/0xAC836855C5aCF63E5173b729D1c4746B9Ad31b3b) |
+| Timelock | [`0xB5D1360102B4f6B4B48DDc7F41B7c612B88d624e`](https://sepolia.etherscan.io/address/0xB5D1360102B4f6B4B48DDc7F41B7c612B88d624e) |
+| USDC (test) | [`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`](https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238) |
+
+Full deployment artifacts: [`testnet/medi2/sepolia/`](./testnet/medi2/sepolia)
 
 #### `medi1` — Sepolia (chainId `11155111`)
 
