@@ -1,0 +1,42 @@
+{
+  "name": "demo-1",
+  "version": "1.0.0",
+  "description": "Full Armada protocol deployment (privacy pool + yield + cross-chain) for armada-interface designer review",
+  "environment": "testnet",
+  "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
+  "deployedAt": "2026-05-21T16:57:13Z",
+  "chains": {
+    "sepolia": {
+      "chainId": 11155111,
+      "role": "hub",
+      "explorer": "https://sepolia.etherscan.io",
+      "artifacts": [
+        "sepolia/cctp.json",
+        "sepolia/governance.json",
+        "sepolia/privacy-pool.json",
+        "sepolia/yield.json",
+        "sepolia/aave-mock.json",
+        "sepolia/fee-module.json",
+        "sepolia/crowdfund.json"
+      ]
+    },
+    "base-sepolia": {
+      "chainId": 84532,
+      "role": "client",
+      "explorer": "https://sepolia.basescan.org",
+      "artifacts": [
+        "base-sepolia/cctp.json",
+        "base-sepolia/privacy-pool.json"
+      ]
+    },
+    "arbitrum-sepolia": {
+      "chainId": 421614,
+      "role": "client",
+      "explorer": "https://sepolia.arbiscan.io",
+      "artifacts": [
+        "arbitrum-sepolia/cctp.json",
+        "arbitrum-sepolia/privacy-pool.json"
+      ]
+    }
+  }
+}
