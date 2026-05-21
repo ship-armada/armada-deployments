@@ -24,11 +24,11 @@ Multiple instances can be live simultaneously (e.g. `medi1`, `medi2`, `protocol-
 
 | Instance | Chains | Description |
 |---|---|---|
-| [`demo-1`](./testnet/demo-1) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol (privacy pool + yield + cross-chain) for `armada-interface` designer review |
+| [`demo1`](./testnet/demo1) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol (privacy pool + yield + cross-chain) for `armada-interface` designer review |
 | [`medi2`](./testnet/medi2) | sepolia | MEDI crowdfund campaign #2 |
 | [`medi1`](./testnet/medi1) | sepolia | MEDI crowdfund campaign #1 |
 
-#### `demo-1` — Sepolia hub + Base Sepolia / Arbitrum Sepolia clients
+#### `demo1` — Sepolia hub + Base Sepolia / Arbitrum Sepolia clients
 
 Hub (Ethereum Sepolia, chainId `11155111`):
 
@@ -49,7 +49,7 @@ Clients (CCTP V2 destinations):
 | Base Sepolia | `84532` | [`0x83C80Fa61c5dA2A716326871025a5d0c2B9bD43f`](https://sepolia.basescan.org/address/0x83C80Fa61c5dA2A716326871025a5d0c2B9bD43f) |
 | Arbitrum Sepolia | `421614` | [`0xd76105dC158de8d3a1B32AFcAD22C55feC69716d`](https://sepolia.arbiscan.io/address/0xd76105dC158de8d3a1B32AFcAD22C55feC69716d) |
 
-Full deployment artifacts: [`testnet/demo-1/`](./testnet/demo-1)
+Full deployment artifacts: [`testnet/demo1/`](./testnet/demo1)
 
 #### `medi2` — Sepolia (chainId `11155111`)
 

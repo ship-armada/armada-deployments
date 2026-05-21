@@ -1,5 +1,5 @@
 {
-  "name": "demo-1",
+  "name": "demo1",
   "version": "1.0.0",
   "description": "Full Armada protocol deployment (privacy pool + yield + cross-chain) for armada-interface designer review",
   "environment": "testnet",
