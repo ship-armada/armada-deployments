@@ -24,8 +24,32 @@ Multiple instances can be live simultaneously (e.g. `medi1`, `medi2`, `protocol-
 
 | Instance | Chains | Description |
 |---|---|---|
+| [`demo1`](./testnet/demo1) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol (privacy pool + yield + cross-chain) for `armada-interface` designer review |
 | [`medi2`](./testnet/medi2) | sepolia | MEDI crowdfund campaign #2 |
 | [`medi1`](./testnet/medi1) | sepolia | MEDI crowdfund campaign #1 |
+
+#### `demo1` — Sepolia hub + Base Sepolia / Arbitrum Sepolia clients
+
+Hub (Ethereum Sepolia, chainId `11155111`):
+
+| Contract | Address |
+|---|---|
+| PrivacyPool | [`0x014aC1dfC2Bde83d4be2CFFb5bea4dE942DAD77F`](https://sepolia.etherscan.io/address/0x014aC1dfC2Bde83d4be2CFFb5bea4dE942DAD77F) |
+| ArmadaYieldVault | [`0x214a3c251E9b064f4420a26Cc879b362A26bAc5A`](https://sepolia.etherscan.io/address/0x214a3c251E9b064f4420a26Cc879b362A26bAc5A) |
+| ArmadaYieldAdapter | [`0x148A6A4588062dB433Fa8847017DB42bAc506458`](https://sepolia.etherscan.io/address/0x148A6A4588062dB433Fa8847017DB42bAc506458) |
+| AdapterRegistry | [`0xbA5D04B538864593a0eEc2995aCE6502CC93aCb5`](https://sepolia.etherscan.io/address/0xbA5D04B538864593a0eEc2995aCE6502CC93aCb5) |
+| MockAaveSpoke | [`0x25844C20C11f842dde6BC733132b6229BC33eFAd`](https://sepolia.etherscan.io/address/0x25844C20C11f842dde6BC733132b6229BC33eFAd) |
+| Timelock | [`0xB70D1DcD7E63E0eF7b4c7B83cAb35f5863462889`](https://sepolia.etherscan.io/address/0xB70D1DcD7E63E0eF7b4c7B83cAb35f5863462889) |
+| USDC (test) | [`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`](https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238) |
+
+Clients (CCTP V2 destinations):
+
+| Chain | chainId | PrivacyPoolClient |
+|---|---|---|
+| Base Sepolia | `84532` | [`0x83C80Fa61c5dA2A716326871025a5d0c2B9bD43f`](https://sepolia.basescan.org/address/0x83C80Fa61c5dA2A716326871025a5d0c2B9bD43f) |
+| Arbitrum Sepolia | `421614` | [`0xd76105dC158de8d3a1B32AFcAD22C55feC69716d`](https://sepolia.arbiscan.io/address/0xd76105dC158de8d3a1B32AFcAD22C55feC69716d) |
+
+Full deployment artifacts: [`testnet/demo1/`](./testnet/demo1)
 
 #### `medi2` — Sepolia (chainId `11155111`)
 
