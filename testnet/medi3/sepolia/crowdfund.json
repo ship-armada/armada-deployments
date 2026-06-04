@@ -1,7 +1,7 @@
 {
   "chainId": 11155111,
   "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
-  "deployBlock": 10983380,
+  "deployBlock": 10983297,
   "contracts": {
     "armToken": "0x30dFC038C498A084db4E039477F6a56b56E9F566",
     "usdc": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
