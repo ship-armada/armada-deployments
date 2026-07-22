@@ -24,9 +24,35 @@ Multiple instances can be live simultaneously (e.g. `medi1`, `medi2`, `protocol-
 
 | Instance | Chains | Description |
 |---|---|---|
+| [`demo2`](./testnet/demo2) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol on armada-circuits, full set of 19 vks. First deployment. |
 | [`demo1`](./testnet/demo1) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol (privacy pool + yield + cross-chain) for `armada-interface` designer review |
 | [`medi2`](./testnet/medi2) | sepolia | MEDI crowdfund campaign #2 |
 | [`medi1`](./testnet/medi1) | sepolia | MEDI crowdfund campaign #1 |
+
+#### `demo2` — Sepolia hub + Base Sepolia / Arbitrum Sepolia clients
+
+First deployment on Armada's own ZK circuits (`armada-circuits`), with the full set of 19 verification keys registered on-chain and testing mode off (real Groth16 verification).
+
+Hub (Ethereum Sepolia, chainId `11155111`):
+
+| Contract | Address |
+|---|---|
+| PrivacyPool | [`0x3442e860d9Ec64c30e6beF2d3AFc21ef8605a1c3`](https://sepolia.etherscan.io/address/0x3442e860d9Ec64c30e6beF2d3AFc21ef8605a1c3) |
+| ArmadaYieldVault | [`0xF0Ff34b740CF56abF3E830168e186c267D2A8f4E`](https://sepolia.etherscan.io/address/0xF0Ff34b740CF56abF3E830168e186c267D2A8f4E) |
+| ArmadaYieldAdapter | [`0xe2EF26c8Ea2c1F2de358260839225701c89E2338`](https://sepolia.etherscan.io/address/0xe2EF26c8Ea2c1F2de358260839225701c89E2338) |
+| AdapterRegistry | [`0x507f3e7585B02ac4ab959d6e476D59DB793C3F26`](https://sepolia.etherscan.io/address/0x507f3e7585B02ac4ab959d6e476D59DB793C3F26) |
+| MockAaveSpoke | [`0xbCbAc73B51db9A23504Dc3C453Cd0A71d1510177`](https://sepolia.etherscan.io/address/0xbCbAc73B51db9A23504Dc3C453Cd0A71d1510177) |
+| Timelock | [`0xeE7FB07EDDCf2d886a58135a5700C6582C89C034`](https://sepolia.etherscan.io/address/0xeE7FB07EDDCf2d886a58135a5700C6582C89C034) |
+| USDC (test) | [`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`](https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238) |
+
+Clients (CCTP V2 destinations):
+
+| Chain | chainId | PrivacyPoolClient |
+|---|---|---|
+| Base Sepolia | `84532` | [`0x3376660cCda97fb215C3548801426A38B2490A08`](https://sepolia.basescan.org/address/0x3376660cCda97fb215C3548801426A38B2490A08) |
+| Arbitrum Sepolia | `421614` | [`0x1EfC602C9B6484961312F580E121A0AaCa0cF4e9`](https://sepolia.arbiscan.io/address/0x1EfC602C9B6484961312F580E121A0AaCa0cF4e9) |
+
+Full deployment artifacts: [`testnet/demo2/`](./testnet/demo2)
 
 #### `demo1` — Sepolia hub + Base Sepolia / Arbitrum Sepolia clients
 
