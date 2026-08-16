@@ -1,0 +1,19 @@
+{
+  "name": "medi4",
+  "version": "1.0.0",
+  "description": "MEDI crowdfund campaign #4",
+  "environment": "testnet",
+  "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
+  "deployedAt": "2026-08-16T21:49:24Z",
+  "chains": {
+    "sepolia": {
+      "chainId": 11155111,
+      "role": "hub",
+      "explorer": "https://sepolia.etherscan.io",
+      "artifacts": [
+        "sepolia/governance.json",
+        "sepolia/crowdfund.json"
+      ]
+    }
+  }
+}
