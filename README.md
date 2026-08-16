@@ -26,6 +26,8 @@ Multiple instances can be live simultaneously (e.g. `medi1`, `medi2`, `protocol-
 |---|---|---|
 | [`demo2`](./testnet/demo2) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol on armada-circuits, full set of 19 vks. First deployment. |
 | [`demo1`](./testnet/demo1) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol (privacy pool + yield + cross-chain) for `armada-interface` designer review |
+| [`medi4`](./testnet/medi4) | sepolia | MEDI crowdfund campaign #4 |
+| [`medi3`](./testnet/medi3) | sepolia | MEDI crowdfund campaign #3 |
 | [`medi2`](./testnet/medi2) | sepolia | MEDI crowdfund campaign #2 |
 | [`medi1`](./testnet/medi1) | sepolia | MEDI crowdfund campaign #1 |
 
@@ -76,6 +78,34 @@ Clients (CCTP V2 destinations):
 | Arbitrum Sepolia | `421614` | [`0xd76105dC158de8d3a1B32AFcAD22C55feC69716d`](https://sepolia.arbiscan.io/address/0xd76105dC158de8d3a1B32AFcAD22C55feC69716d) |
 
 Full deployment artifacts: [`testnet/demo1/`](./testnet/demo1)
+
+#### `medi4` — Sepolia (chainId `11155111`)
+
+Downscaled crowdfund + governance test instance (sale $1k/$1.5k/$800, 10K ARM supply, governance timing in hours).
+
+| Contract | Address |
+|---|---|
+| ARM Token | [`0xC1CDf6478b02EDBc59A7e36CEd902AF5C423Ecfb`](https://sepolia.etherscan.io/address/0xC1CDf6478b02EDBc59A7e36CEd902AF5C423Ecfb) |
+| Crowdfund | [`0x9b4FdfcAe83c3FDdEd1e0058789a11Ce6fcfaB6f`](https://sepolia.etherscan.io/address/0x9b4FdfcAe83c3FDdEd1e0058789a11Ce6fcfaB6f) |
+| Treasury | [`0xd473Ef1C8CF6AD11cF1AAad496f952758AF5Fe5B`](https://sepolia.etherscan.io/address/0xd473Ef1C8CF6AD11cF1AAad496f952758AF5Fe5B) |
+| Governor | [`0x09F53F4A28408A58cffb3019E1E0e93fEB6bFD34`](https://sepolia.etherscan.io/address/0x09F53F4A28408A58cffb3019E1E0e93fEB6bFD34) |
+| Timelock | [`0x3e5DeE9aC276f150a4a1F3CD6a823F621D8826E5`](https://sepolia.etherscan.io/address/0x3e5DeE9aC276f150a4a1F3CD6a823F621D8826E5) |
+| USDC (test) | [`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`](https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238) |
+
+Full deployment artifacts: [`testnet/medi4/sepolia/`](./testnet/medi4/sepolia)
+
+#### `medi3` — Sepolia (chainId `11155111`)
+
+| Contract | Address |
+|---|---|
+| ARM Token | [`0x30dFC038C498A084db4E039477F6a56b56E9F566`](https://sepolia.etherscan.io/address/0x30dFC038C498A084db4E039477F6a56b56E9F566) |
+| Crowdfund | [`0xc19E0F54fbbB23F3744bC203F38ca00AC51aE36B`](https://sepolia.etherscan.io/address/0xc19E0F54fbbB23F3744bC203F38ca00AC51aE36B) |
+| Treasury | [`0x51b90f6238DE410D0D0f21e83449D86073ed9645`](https://sepolia.etherscan.io/address/0x51b90f6238DE410D0D0f21e83449D86073ed9645) |
+| Governor | [`0x31ef35fCc6908236Df1C27902DF8282b61E4D1C6`](https://sepolia.etherscan.io/address/0x31ef35fCc6908236Df1C27902DF8282b61E4D1C6) |
+| Timelock | [`0x07dE6312DD5036970a18783F0151F120bCE3139A`](https://sepolia.etherscan.io/address/0x07dE6312DD5036970a18783F0151F120bCE3139A) |
+| USDC (test) | [`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`](https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238) |
+
+Full deployment artifacts: [`testnet/medi3/sepolia/`](./testnet/medi3/sepolia)
 
 #### `medi2` — Sepolia (chainId `11155111`)
 
