@@ -24,12 +24,38 @@ Multiple instances can be live simultaneously (e.g. `medi1`, `medi2`, `protocol-
 
 | Instance | Chains | Description |
 |---|---|---|
+| [`demo3`](./testnet/demo3) | sepolia, optimism-sepolia, base-sepolia | Full Armada protocol on armada-circuits (19 vks). Hub on Sepolia; clients on Optimism Sepolia + Base Sepolia. |
 | [`demo2`](./testnet/demo2) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol on armada-circuits, full set of 19 vks. First deployment. |
 | [`demo1`](./testnet/demo1) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol (privacy pool + yield + cross-chain) for `armada-interface` designer review |
 | [`medi4`](./testnet/medi4) | sepolia | MEDI crowdfund campaign #4 |
 | [`medi3`](./testnet/medi3) | sepolia | MEDI crowdfund campaign #3 |
 | [`medi2`](./testnet/medi2) | sepolia | MEDI crowdfund campaign #2 |
 | [`medi1`](./testnet/medi1) | sepolia | MEDI crowdfund campaign #1 |
+
+#### `demo3` — Sepolia hub + Optimism Sepolia / Base Sepolia clients
+
+Full Armada protocol on Armada's own ZK circuits (`armada-circuits`), with the full set of 19 verification keys registered on-chain and testing mode off (real Groth16 verification).
+
+Hub (Ethereum Sepolia, chainId `11155111`):
+
+| Contract | Address |
+|---|---|
+| PrivacyPool | [`0x5f3324b47b3CFf937BB67C30B362898E193e5216`](https://sepolia.etherscan.io/address/0x5f3324b47b3CFf937BB67C30B362898E193e5216) |
+| ArmadaYieldVault | [`0xB59a4D8f27b9204Fc3477239D54f4E32C40C45E9`](https://sepolia.etherscan.io/address/0xB59a4D8f27b9204Fc3477239D54f4E32C40C45E9) |
+| ArmadaYieldAdapter | [`0xE36B974dc4f08aFbD0C1C013Fa5dfEE3a80fC1Ea`](https://sepolia.etherscan.io/address/0xE36B974dc4f08aFbD0C1C013Fa5dfEE3a80fC1Ea) |
+| AdapterRegistry | [`0xDdeBD265fE7ebB5777C2a00708dc60165479F7d3`](https://sepolia.etherscan.io/address/0xDdeBD265fE7ebB5777C2a00708dc60165479F7d3) |
+| MockAaveSpoke | [`0xa89552552C7B4c62310b5F3BBeAB21E913FEBC30`](https://sepolia.etherscan.io/address/0xa89552552C7B4c62310b5F3BBeAB21E913FEBC30) |
+| Timelock | [`0xB1e8381702f934FbdA33D1C916eE72948a6ED406`](https://sepolia.etherscan.io/address/0xB1e8381702f934FbdA33D1C916eE72948a6ED406) |
+| USDC (test) | [`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`](https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238) |
+
+Clients (CCTP V2 destinations):
+
+| Chain | chainId | PrivacyPoolClient |
+|---|---|---|
+| Optimism Sepolia | `11155420` | [`0x2afeF8239663B3bb1858ad1FDD4FfF753379083c`](https://sepolia-optimism.etherscan.io/address/0x2afeF8239663B3bb1858ad1FDD4FfF753379083c) |
+| Base Sepolia | `84532` | [`0x4d25F9D0B0Cd67F6FB2e6e1F2e9B072e750B0c30`](https://sepolia.basescan.org/address/0x4d25F9D0B0Cd67F6FB2e6e1F2e9B072e750B0c30) |
+
+Full deployment artifacts: [`testnet/demo3/`](./testnet/demo3)
 
 #### `demo2` — Sepolia hub + Base Sepolia / Arbitrum Sepolia clients
 
