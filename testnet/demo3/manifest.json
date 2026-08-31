@@ -1,0 +1,42 @@
+{
+  "name": "demo3",
+  "version": "1.0.0",
+  "description": "Full Armada protocol on armada-circuits, full set of 19 vks. Hub on Ethereum Sepolia; clients on Optimism Sepolia + Base Sepolia.",
+  "environment": "testnet",
+  "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
+  "deployedAt": "2026-08-31T15:39:50Z",
+  "chains": {
+    "sepolia": {
+      "chainId": 11155111,
+      "role": "hub",
+      "explorer": "https://sepolia.etherscan.io",
+      "artifacts": [
+        "sepolia/cctp.json",
+        "sepolia/governance.json",
+        "sepolia/privacy-pool.json",
+        "sepolia/yield.json",
+        "sepolia/aave-mock.json",
+        "sepolia/fee-module.json",
+        "sepolia/crowdfund.json"
+      ]
+    },
+    "optimism-sepolia": {
+      "chainId": 11155420,
+      "role": "client",
+      "explorer": "https://sepolia-optimism.etherscan.io",
+      "artifacts": [
+        "optimism-sepolia/cctp.json",
+        "optimism-sepolia/privacy-pool.json"
+      ]
+    },
+    "base-sepolia": {
+      "chainId": 84532,
+      "role": "client",
+      "explorer": "https://sepolia.basescan.org",
+      "artifacts": [
+        "base-sepolia/cctp.json",
+        "base-sepolia/privacy-pool.json"
+      ]
+    }
+  }
+}
