@@ -1,0 +1,19 @@
+{
+  "name": "mini1",
+  "version": "1.0.0",
+  "description": "MINI crowdfund campaign #1 — 3-day (72h) commit window + fast governance to enable ARM transfers",
+  "environment": "testnet",
+  "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
+  "deployedAt": "2026-09-08T15:05:25Z",
+  "chains": {
+    "sepolia": {
+      "chainId": 11155111,
+      "role": "hub",
+      "explorer": "https://sepolia.etherscan.io",
+      "artifacts": [
+        "sepolia/governance.json",
+        "sepolia/crowdfund.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "chainId": 11155111,
+  "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
+  "deployBlock": 11661719,
+  "contracts": {
+    "timelockController": "0x0dd374961b2dE235aF74e119DdBb0141b1eB2B05",
+    "armToken": "0x54b4a43C58c772e5d346AdfEeb4B62E17299B3a5",
+    "treasury": "0xd1E042844C959c5a4ccF5b9Edd101FFeC71232Ed",
+    "governor": "0x1D0599f1aCd9A243BebFf64AD598BFd439A4255a",
+    "governorImpl": "0x2338052AF86E5d8d68Da15381087e583fa5f3730",
+    "steward": "0x43CF796fE68F3c28Bb4539EAf656f60373fe145b",
+    "adapterRegistry": "0xb8f3f48DDcD34f30aF628D9f32E31270baDF31B8",
+    "revenueCounter": "0xaFc5654552A56491f844cC8ebA209617Bc8883f4",
+    "revenueCounterImpl": "0x3a81e0d1697C556a058ff1efD73C68FdF2eC654c",
+    "revenueLock": "0x235e9E252F871B3D82e923eEfE48864e321b64Ec",
+    "shieldPauseController": "0xe1FA37CAFD1517f0E4B353974065caCD1bc2E39F",
+    "redemption": "0x1657139f19b8642D33dA7a9544a32Eb0D0F2D684",
+    "windDown": "0x43Cf85b0E28de0a1bfB403f4A67bD8914fDA6A84"
+  },
+  "config": {
+    "timelockMinDelay": 60,
+    "totalSupply": "10000",
+    "treasuryAllocation": "9440"
+  },
+  "timestamp": "2026-09-08T14:49:36.553Z"
+}

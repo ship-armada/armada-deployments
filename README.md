@@ -27,6 +27,7 @@ Multiple instances can be live simultaneously (e.g. `medi1`, `medi2`, `protocol-
 | [`demo3`](./testnet/demo3) | sepolia, optimism-sepolia, base-sepolia | Full Armada protocol on armada-circuits (19 vks). Hub on Sepolia; clients on Optimism Sepolia + Base Sepolia. |
 | [`demo2`](./testnet/demo2) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol on armada-circuits, full set of 19 vks. First deployment. |
 | [`demo1`](./testnet/demo1) | sepolia, base-sepolia, arbitrum-sepolia | Full Armada protocol (privacy pool + yield + cross-chain) for `armada-interface` designer review |
+| [`mini1`](./testnet/mini1) | sepolia | MINI crowdfund campaign #1 — 3-day window + governance enable-transfers test |
 | [`medi4`](./testnet/medi4) | sepolia | MEDI crowdfund campaign #4 |
 | [`medi3`](./testnet/medi3) | sepolia | MEDI crowdfund campaign #3 |
 | [`medi2`](./testnet/medi2) | sepolia | MEDI crowdfund campaign #2 |
@@ -104,6 +105,21 @@ Clients (CCTP V2 destinations):
 | Arbitrum Sepolia | `421614` | [`0xd76105dC158de8d3a1B32AFcAD22C55feC69716d`](https://sepolia.arbiscan.io/address/0xd76105dC158de8d3a1B32AFcAD22C55feC69716d) |
 
 Full deployment artifacts: [`testnet/demo1/`](./testnet/demo1)
+
+#### `mini1` — Sepolia (chainId `11155111`)
+
+Downscaled crowdfund + governance test instance: 3-day (72h) commit window (48h launch-team invite period), sale $240/$360/$200 (trigger $300), hop caps $15/$4/$1, $0.10 min commit, 10K ARM supply, governance timing in hours. Exercises the full ARM-claim path plus an Extended governance proposal to enable ARM transfers.
+
+| Contract | Address |
+|---|---|
+| ARM Token | [`0x54b4a43C58c772e5d346AdfEeb4B62E17299B3a5`](https://sepolia.etherscan.io/address/0x54b4a43C58c772e5d346AdfEeb4B62E17299B3a5) |
+| Crowdfund | [`0x52dA399334C19F5817eFcd658eF8801Eb368d2f2`](https://sepolia.etherscan.io/address/0x52dA399334C19F5817eFcd658eF8801Eb368d2f2) |
+| Treasury | [`0xd1E042844C959c5a4ccF5b9Edd101FFeC71232Ed`](https://sepolia.etherscan.io/address/0xd1E042844C959c5a4ccF5b9Edd101FFeC71232Ed) |
+| Governor | [`0x1D0599f1aCd9A243BebFf64AD598BFd439A4255a`](https://sepolia.etherscan.io/address/0x1D0599f1aCd9A243BebFf64AD598BFd439A4255a) |
+| Timelock | [`0x0dd374961b2dE235aF74e119DdBb0141b1eB2B05`](https://sepolia.etherscan.io/address/0x0dd374961b2dE235aF74e119DdBb0141b1eB2B05) |
+| USDC (test) | [`0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238`](https://sepolia.etherscan.io/address/0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238) |
+
+Full deployment artifacts: [`testnet/mini1/sepolia/`](./testnet/mini1/sepolia)
 
 #### `medi4` — Sepolia (chainId `11155111`)
 
