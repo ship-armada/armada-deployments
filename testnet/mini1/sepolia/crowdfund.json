@@ -1,0 +1,20 @@
+{
+  "chainId": 11155111,
+  "deployer": "0x98b1CBa0908C98c95c9C87D94e4fCdddc87C933d",
+  "deployBlock": 11661744,
+  "contracts": {
+    "armToken": "0x54b4a43C58c772e5d346AdfEeb4B62E17299B3a5",
+    "usdc": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+    "crowdfund": "0x52dA399334C19F5817eFcd658eF8801Eb368d2f2",
+    "treasury": "0xd1E042844C959c5a4ccF5b9Edd101FFeC71232Ed",
+    "governor": "0x1D0599f1aCd9A243BebFf64AD598BFd439A4255a"
+  },
+  "config": {
+    "baseSale": "240",
+    "maxSale": "360",
+    "minSale": "200",
+    "armPrice": "1.00",
+    "armFunded": "360"
+  },
+  "timestamp": "2026-09-08T15:05:25.511Z"
+}
