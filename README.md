@@ -11,7 +11,8 @@ armada-deployments/
 │       ├── manifest.json        # instance metadata + chain list
 │       └── <chain>/             # per-chain deployment artifacts
 │           └── <component>.json
-└── mainnet/                     # (future)
+└── mainnet/
+    └── <name>/                  # same layout as testnet/
 ```
 
 A *named instance* groups a coordinated set of contracts deployed across one or more chains. Frontends consume an instance by name (e.g. `medi1`) and resolve the chains they need from the instance's `manifest.json`.
@@ -177,7 +178,30 @@ Full deployment artifacts: [`testnet/medi1/sepolia/`](./testnet/medi1/sepolia)
 
 ### Mainnet
 
-_None yet._
+| Instance | Chains | Description |
+|---|---|---|
+| [`armada-1`](./mainnet/armada-1) | mainnet | Launch 1 — ARM crowdfund + governance (shielded pool ships in a later launch) |
+
+#### `armada-1` — Ethereum mainnet (chainId `1`)
+
+Launch 1: ARM token, crowdfund (opens 2026-10-08 16:00 UTC, 21-day commitment window), governance (governor, 2-day timelock, treasury, steward), RevenueLock + reserve distributor, and wind-down/redemption. The privacy pool, yield and fee module are not part of this instance.
+
+| Contract | Address |
+|---|---|
+| ARM Token | [`0x7Ad1fA86Ca5cF19d18aD1e76734Da1E8d653637A`](https://etherscan.io/address/0x7Ad1fA86Ca5cF19d18aD1e76734Da1E8d653637A) |
+| Crowdfund | [`0xB4b0BBac50Df6c9479180AA788dAd8f88D520163`](https://etherscan.io/address/0xB4b0BBac50Df6c9479180AA788dAd8f88D520163) |
+| Treasury | [`0xFd8D51df6c63B54C578E0Da3f3316FB25e38DEFf`](https://etherscan.io/address/0xFd8D51df6c63B54C578E0Da3f3316FB25e38DEFf) |
+| Governor | [`0x421e7d81D5A0085734C5e51e7ba675aC7caEa084`](https://etherscan.io/address/0x421e7d81D5A0085734C5e51e7ba675aC7caEa084) |
+| Timelock | [`0xf344566D46C367e7116bf36F16D45B0a1101B117`](https://etherscan.io/address/0xf344566D46C367e7116bf36F16D45B0a1101B117) |
+| TreasurySteward | [`0x54E8121ca9adF2368261931090E1fEED8744877f`](https://etherscan.io/address/0x54E8121ca9adF2368261931090E1fEED8744877f) |
+| RevenueLock | [`0x9f3918cdB8d4B4527B2199Efee70607899de21dD`](https://etherscan.io/address/0x9f3918cdB8d4B4527B2199Efee70607899de21dD) |
+| RevenueReserveDistributor | [`0x3D2970Efcb93Ca20E6204F67C24496a9e5aB0131`](https://etherscan.io/address/0x3D2970Efcb93Ca20E6204F67C24496a9e5aB0131) |
+| RevenueCounter | [`0x5db9C75Eb8034265E3D0bdc24d4204ff9D1a2Ab2`](https://etherscan.io/address/0x5db9C75Eb8034265E3D0bdc24d4204ff9D1a2Ab2) |
+| ArmadaWindDown | [`0xd0d7DB3BA35C8029c8bc3F3936661fe1cB0E3B8e`](https://etherscan.io/address/0xd0d7DB3BA35C8029c8bc3F3936661fe1cB0E3B8e) |
+| ArmadaRedemption | [`0x1D902c029A5652f3F21Daf0BdEa97Ce2DC3cdaA7`](https://etherscan.io/address/0x1D902c029A5652f3F21Daf0BdEa97Ce2DC3cdaA7) |
+| USDC | [`0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48`](https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48) |
+
+Full deployment artifacts: [`mainnet/armada-1/mainnet/`](./mainnet/armada-1/mainnet)
 
 ## Consuming from a frontend
 
