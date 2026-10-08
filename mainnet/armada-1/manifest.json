@@ -1,0 +1,20 @@
+{
+  "name": "armada-1",
+  "version": "1.0.0",
+  "description": "Armada Launch 1 — ARM crowdfund + governance on Ethereum mainnet (shielded pool ships in a later launch)",
+  "environment": "mainnet",
+  "deployer": "0x11C65F9C241a7C4d894cFEfC49Fdf7bb055B53Ac",
+  "deployedAt": "2026-10-08T14:02:01Z",
+  "chains": {
+    "mainnet": {
+      "chainId": 1,
+      "role": "hub",
+      "explorer": "https://etherscan.io",
+      "artifacts": [
+        "mainnet/cctp.json",
+        "mainnet/governance.json",
+        "mainnet/crowdfund.json"
+      ]
+    }
+  }
+}
