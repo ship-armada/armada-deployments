@@ -180,9 +180,33 @@ Full deployment artifacts: [`testnet/medi1/sepolia/`](./testnet/medi1/sepolia)
 
 | Instance | Chains | Description |
 |---|---|---|
-| [`armada-1`](./mainnet/armada-1) | mainnet | Launch 1 — ARM crowdfund + governance (shielded pool ships in a later launch) |
+| [`armada-2`](./mainnet/armada-2) | mainnet | Relaunch — ARM crowdfund + governance (shielded pool ships in a later launch) |
+| [`armada-1`](./mainnet/armada-1) | mainnet | Launch 1 — **cancelled**; refunds only (claimable on the committer's `/refund` page). Do not point a frontend at it |
+
+#### `armada-2` — Ethereum mainnet (chainId `1`)
+
+Relaunch: ARM token, crowdfund (opens 2026-12-01 16:00 UTC, 5-day commitment window, extendable to at most 15 days), governance (governor, 2-day timelock, treasury, steward), RevenueLock + reserve distributor, and wind-down/redemption (the launch team is the wind-down guardian). The privacy pool, yield and fee module are not part of this instance.
+
+| Contract | Address |
+|---|---|
+| ARM Token | [`0x975668Ea9fF6cd28eca9e1d12785DbD63af8eC0B`](https://etherscan.io/address/0x975668Ea9fF6cd28eca9e1d12785DbD63af8eC0B) |
+| Crowdfund | [`0x9b6aa9AF65b2f2273A57DB7288CCe2259959Cb37`](https://etherscan.io/address/0x9b6aa9AF65b2f2273A57DB7288CCe2259959Cb37) |
+| Treasury | [`0x9D6aaD9E29A0b9C19D441ebFbfcA4DE15764d55F`](https://etherscan.io/address/0x9D6aaD9E29A0b9C19D441ebFbfcA4DE15764d55F) |
+| Governor | [`0x5B5f37357991dE4dac48d4944C4856f98515cC50`](https://etherscan.io/address/0x5B5f37357991dE4dac48d4944C4856f98515cC50) |
+| Timelock | [`0x4a7313796Dc204281f31F31290E54cb6A46D0DeD`](https://etherscan.io/address/0x4a7313796Dc204281f31F31290E54cb6A46D0DeD) |
+| TreasurySteward | [`0x8f13D08Ba10c0971dCb0c9934b533730b5cE474e`](https://etherscan.io/address/0x8f13D08Ba10c0971dCb0c9934b533730b5cE474e) |
+| RevenueLock | [`0xd042d43A9e8486E005e86B4DaCdF8c879D0EFF32`](https://etherscan.io/address/0xd042d43A9e8486E005e86B4DaCdF8c879D0EFF32) |
+| RevenueReserveDistributor | [`0x49234245f7812aFbFE4571a8e40f47fDD0D21CE9`](https://etherscan.io/address/0x49234245f7812aFbFE4571a8e40f47fDD0D21CE9) |
+| RevenueCounter | [`0xfa65D8b3d239878aaD722F3081bE0B1931Ffd7A0`](https://etherscan.io/address/0xfa65D8b3d239878aaD722F3081bE0B1931Ffd7A0) |
+| ArmadaWindDown | [`0xcACfAc7E4649a1e84FE978cdc594f3AAfE4CB5aB`](https://etherscan.io/address/0xcACfAc7E4649a1e84FE978cdc594f3AAfE4CB5aB) |
+| ArmadaRedemption | [`0x7A14d6a6C67C1B0d25a1433a5E0e2e9bCd9f7631`](https://etherscan.io/address/0x7A14d6a6C67C1B0d25a1433a5E0e2e9bCd9f7631) |
+| USDC | [`0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48`](https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48) |
+
+Full deployment artifacts: [`mainnet/armada-2/mainnet/`](./mainnet/armada-2/mainnet)
 
 #### `armada-1` — Ethereum mainnet (chainId `1`)
+
+**Status: cancelled.** The Launch 1 crowdfund was cancelled; committers claim full refunds from the crowdfund contract (the relaunch committer's `/refund` page). Kept for the record.
 
 Launch 1: ARM token, crowdfund (opens 2026-10-08 16:00 UTC, 21-day commitment window), governance (governor, 2-day timelock, treasury, steward), RevenueLock + reserve distributor, and wind-down/redemption. The privacy pool, yield and fee module are not part of this instance.
 
